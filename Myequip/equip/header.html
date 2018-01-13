@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>header</title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/header.css">
+		<style>
+			.ribbon {
+				display:inline-block;
+				font-size:13px;
+			}
+
+			.ribbon:after, .ribbon:before {
+				margin-top:0.5em;
+				content: "";
+				float:left;
+				border:1.5em solid #EDEDED;
+			}
+
+			.ribbon:after {
+				border-right-color:transparent;
+			}
+
+			.ribbon:before {
+				border-left-color:transparent;
+			}
+
+			.ribbon a:link, .ribbon a:visited { 
+				color:#000;
+				text-decoration:none;
+			    float:left;
+			    height:3.5em;
+				overflow:hidden;
+			}
+
+			.ribbon span {
+				background:#EDEDED;
+				box-shadow:3px 3px 6px #d3d3d3;
+				display:inline-block;
+				line-height:3em;
+				padding:0 1em;
+				margin-top:0.5em;
+				position:relative;
+				color:#525252;
+
+				-webkit-transition: background-color 0.2s, margin-top 0.2s;  /* Saf3.2+, Chrome */
+				-moz-transition: background-color 0.2s, margin-top 0.2s;  /* FF4+ */
+				-ms-transition: background-color 0.2s, margin-top 0.2s;  /* IE10 */
+				-o-transition: background-color 0.2s, margin-top 0.2s;  /* Opera 10.5+ */
+				transition: background-color 0.2s, margin-top 0.2s;
+			}
+
+			.ribbon a:hover span {
+				background:#dd3333;
+				margin-top:0;
+				color:#fff;
+			}
+
+			.ribbon span:before {
+				content: "";
+				position:absolute;
+				top:3em;
+				left:0;
+				border-right:0.5em solid #952424;
+				border-bottom:0.5em solid #fff;
+			}
+
+			.ribbon span:after {
+				content: "";
+				position:absolute;
+				top:3em;
+				right:0;
+				border-left:0.5em solid #952424;
+				border-bottom:0.5em solid #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="top_bar">
+			<div class="clear"> 
+<!-- 			在线时间	 -->
+				<div class="bar_left lf">
+					<div class="lf">
+						<i>timer</i>
+						在线时间08:30~21:30
+					</div>
+					<div class="lf">欢迎访问智能设备在线商城&nbsp;<b>!</b>
+					</div>
+				</div>
+<!--			登录注册 -->
+				<div class="bar_right rt">
+					<ul class="rt login_list">
+						<li>
+							<a href="login.html">登录</a>
+						</li>
+						<li>
+							<a href="register.html">注册</a>
+						</li>
+						<li>
+							<a class="shopping-cart"><img src="img/header/shop_car.png" title="查看购物车">
+							</a>
+						</li>
+					</ul>
+					<ul class="rt welcome_list">
+						<li>
+							欢迎 &nbsp;<span class="username"></span>
+						</li>
+						<li>
+							<a href="#" class="logout">退出</a>
+						</li>
+						<li>
+							<a class="shopping-cart">
+								<img src="img/header/shop_car.png" title="查看购物车">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<!-- 			下为导航栏、logo、搜索栏 -->
+			<div class="nav">
+				<div class="logo lf">
+					<a>
+						<img src="img/header/logo.png" alt="">
+					</a>
+				</div>
+				<div class='ribbon'>
+					<a href='index.html'><span>首页</span></a>
+					<a href='searchHelp.html?kw= '><span>所有商品</span></a>
+					<a href='dynamic.html'><span>商城动态</span></a>
+					<a href='aboutus.html'><span>关于我们</span></a>
+					<a href='offline.html'><span>线下门店</span></a>
+				</div>
+<!-- 				<ul class="lf"> -->
+<!-- 					<li> -->
+<!-- 						<a href="index.html">首页</a> -->
+<!-- 					</li> -->
+<!-- 					<li> -->
+<!-- 						<a href="searchHelp.html?kw= ">所有商品</a> -->
+<!-- 					</li> -->
+<!-- 					<li> -->
+<!-- 						<a href="dynamic.html">商城动态</a> -->
+<!-- 					</li> -->
+<!-- 					<li> -->
+<!-- 						<a href="aboutus.html">关于我们</a> -->
+<!-- 					</li> -->
+<!-- 					<li> -->
+<!-- 						<a href="offline.html">线下门店</a> -->
+<!-- 					</li> -->
+<!-- 				</ul> -->
+				<div class="search rt">
+					<div>
+						<input type="text" placeholder="请输入关键字" id="kw">
+						<a href="#" id="searchHelp">
+							搜索
+						</a>
+					</div>
+				</div>
+			</div>
+
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/header.js"></script>
+	</body>
+</html>

@@ -1,0 +1,286 @@
+#banner{
+	background: #000;
+	height: 354px;
+	width: 100%;
+}
+#banner>div{
+	width: 960px;
+	margin:0 auto;
+}
+#banner>div ul.menu{
+	width: 290px;
+	height: 354px;
+}
+#banner>div ul.menu li{
+	width: 250px;
+	height: 59px;
+	background: #252525;
+	border-top:1px solid #3a3a3a;
+	box-sizing:border-box;
+	font-size:14px;
+	color:#ccc;
+	line-height:59px;
+	text-align:left;
+	padding-left:20px;
+}
+#banner>div ul.menu li:hover{
+	background: #182830;
+}
+#banner_pic{
+	width: 660px;
+	height: 354px;
+	text-align:center;
+}
+#banner_pic>img{
+	width: 660px;
+	height: 354px;
+}
+/*以下为商品展示*/
+#product_show{
+	background: #F2F2F2;
+}
+#product_show>.container{
+	width: 960px;
+	margin:0 auto;
+}
+#product_show>.container div.bag_overlay{
+	margin:30px 0;
+	display:flex;
+	justify-content:space-between;
+}
+/*背景图*/
+#product_show div.bag_overlay div.fliper_container{	
+	width: 300px;
+	color:#000;
+	perspective:1000px;
+}
+/*设置宽高*/
+#product_show div.bag_overlay div.fliper_container,
+#product_show div.bag_overlay div.fliper_container .front,
+#product_show div.bag_overlay div.fliper_container .back{
+	width: 300px;
+	height: 220px;
+}
+#product_show div.bag_overlay div.fliper_container .fliper{
+	transition:.6s;
+	transform-style:preserve-3d;
+	position:relative;
+}
+#product_show div.bag_overlay div.fliper_container .front,
+#product_show div.bag_overlay div.fliper_container .back{
+	backface-visibility:hidden;  /*背面不可见*/
+	box-shadow: 3px 3px 5px #ccc;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#product_show div.bag_overlay div.fliper_container .front{
+	background: #96D3C4;
+	opacity:0.7;
+	text-align:center;
+	position:relative;
+}
+#product_show div.bag_overlay div.fliper_container .front img{
+	width: 250px;
+	height: 250px;
+	position:relative;
+	top:-35px;
+}
+#product_show div.bag_overlay div.fliper_container .front p{
+	position:absolute;
+	width: 300px;
+	height: 20px;
+	font-size:16px;
+	color:#000;
+	top:158px;
+	left:15px;
+}
+#product_show div.bag_overlay div.fliper_container .back{
+	background: #ddd;
+	transform:rotateY(180deg);
+}
+#product_show div.bag_overlay div.fliper_container .back h3{
+	width: 194px;
+	height: 24px;
+	margin:50px 0 20px 100px;
+	font-size:16px;
+}
+#product_show div.bag_overlay div.fliper_container .back p{
+	width: 160px;
+	margin:10px auto 0;
+	word-wrap:break-word;
+	line-height:2em;
+	font-size:13px;
+	text-align:center;
+}
+#product_show div.bag_overlay div.fliper_container:hover .fliper{
+	transform:rotateY(180deg);
+}
+/*航拍无人机*/
+#plane,#car,#watch,#vr{
+	height: 632px;
+	margin-top:40px;
+}
+#plane div.title,#news div.title,#car div.title,#news div.title,#watch div.title,#news div.title,#vr div.title,#news div.title{
+	height: 34px;
+	line-height:34px;
+}
+#plane div.title div:empty,#car div.title div:empty,#watch div.title div:empty,#vr div.title div:empty{
+	border:2px solid #DD3333;
+	height:27px;
+}
+#plane div.title div.p_head,#news div.title div.p_head,#car div.title div.p_head,#news div.title div.p_head,
+#watch div.title div.p_head,#news div.title div.p_head,#vr div.title div.p_head,#news div.title div.p_head{
+	margin:0 10px;
+	font-weight:normal;
+	font-size:22px;
+	color:#333;
+}
+#plane div.title div span,#news div.title div span,#car div.title div span,#news div.title div span,
+#watch div.title div span,#news div.title div span,#vr div.title div span,#news div.title div span{
+	font-size:13px;
+	color:#a5a5a5;
+}
+#p_list{
+	margin-top:15px;
+	width: 960px;
+	display:flex;
+	justify-content:space-between;
+}
+#top_sale{
+	width:250px;
+	margin-right:20px;
+}
+#plane_list{
+	width: 700px;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	margin-top: -15px;
+}
+#plane_list>div{
+	width: 220px;
+	background: #fff;
+	margin-top:15px;
+	position:relative;
+	top:0;
+	transition:all .5s linear;
+}
+/*设置鼠标悬停动画 上移、阴影 添加三面阴影？*/
+#plane_list>div:hover{
+	top:-8px;
+	box-shadow:8px 10px 10px #e0e0e0;
+}
+#plane_list>div a img{
+	margin:20px 10px 10px;
+	width: 200px;
+	height:140px;
+}
+#plane_list>div h3{
+	font-weight:normal;
+	font-size:15px;
+	color:#191919;
+	height:21px;
+	line-height:21px;
+	text-align:center;
+}
+#plane_list>div p.spec{
+	height:16px;
+	line-height:16px;
+	text-align:center;
+	margin-top:5px;
+}
+#plane_list>div .spec+p{
+	height:34px;
+	line-height:34px;
+	text-align:center;
+	font-size:18px;
+	color:#dd3333;
+	margin-top:8px;
+}
+/*新闻资讯*/
+#news div.title div:empty{
+	border:2px solid #333;
+	height:27px;
+}
+#news .news_item{
+	width: 960px;
+	margin-top:20px;
+	display:flex;
+	justify-content:space-between;
+}
+#news div.news_item div{
+	width: 225px;
+	height: 380px;
+	box-shadow: 3px 3px 3px #ccc;
+	position:relative;
+}
+#news div.news_item div div.news_detail{
+	position:absolute;
+	width: 225px;
+	background: #666;
+	color:#fff;
+	bottom:0;
+	left:0;
+	height:0;
+	overflow:hidden;
+	transition:all .5s linear;
+}
+#news div.news_item div:hover div.news_detail{
+	background:#333;
+	height: 120px;
+}
+#news div.news_item div div.news_detail p:first-child{
+	font-size:13px;
+	height: 37px;
+	line-height:37px;
+	text-align:center;
+	margin-top:30px;
+}
+#news div.news_item div div.news_detail p:last-child{
+	height:16px;
+	color:#999;
+	margin-left:8px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+/*楼层滚动*/
+#lift{
+	margin-top: 25px;
+	display: none;
+	position: fixed;
+	z-index: 100;
+	left: 10px;
+	top:100px;
+}
+.lift_list{ display: block; list-style:none }
+/*li的样式*/
+.lift_item {
+	border-radius: 50%;
+	transition:all .3s linear;
+	margin-bottom:10px;
+	background:linear-gradient(to top,#1a1a1a 0%,#2b2b2b 100%);
+	box-shadow: 3px 3px 3px #747474;
+}
+.lift_item:hover,.lift_item_on {
+	color: #000;
+	box-shadow: 3px 3px 3px #747474;
+	background:linear-gradient(to top,#d70b1c 0%,#dd3333 100%);
+	transform: scale(1.2,1.2);
+}
+.lift_item:hover .lift_btn{
+	color: #fff;
+}
+/*a标签*/
+.lift_btn {
+	overflow: hidden;
+	display: block;
+	width: 34px;
+	padding: 10px 5px;
+	line-height: 14px;
+	text-align: center;
+	/*background: #000;*/
+	color: #fff;
+	transition: color .1s;
+}

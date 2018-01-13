@@ -1,0 +1,130 @@
+#searchHelper{
+    margin: 20px 0;
+}
+/*顶部地址导航*/
+#href{
+    background:linear-gradient(to top,#dd3333 0%,#C43131 100%);
+    height: 40px;
+    box-shadow: 3px 3px 5px #C43131;
+}
+#href .container{
+    margin:0 auto;
+    width: 960px;
+    line-height:59px;
+    text-align:left;
+}
+#href .container p{
+    color:#fff;
+    line-height:40px;
+    text-align:left;
+}
+/*商品详情*/
+#product-list{
+    width: 100%;
+    background: #f2f2f2;
+    margin:20px 0;
+}
+#plist{
+    width: 960px;
+    margin:0 auto;
+}
+#plist p.title{
+    width: 960px;
+    height: 40px;
+    background: linear-gradient(to top,#e0e0e0 0%,#efefef 100%);
+    text-align: left;
+    font: 16px simhei;
+    color: #808080;
+    padding-left: 20px;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+#plist #show-list{
+    width: 960px;
+    background: #fff;
+		content:"";
+		display:table;
+		display:flex;
+		flex-wrap:wrap;
+}
+#plist #show-list li{
+    width: 217px;
+    height: 280px;
+    margin-right: 10px;
+	text-align:center;
+	margin:10px 10px;
+	border:1px solid #e9e9e9;
+}
+#plist #show-list  li a.show-pic{
+	display:block;
+	width: 200px;
+	height: 140px;
+	margin:0 auto;
+}
+#plist #show-list li a img{
+	width: 200px;
+	height: 140px;
+	transition:all .5s ease;
+}
+/*图片鼠标滑过时放大效果*/
+#plist #show-list li a img:hover{
+	transform:scale(1.05,1.05);
+}
+#plist #show-list li h2{
+	color:#333;
+	font-size:16px;
+	overflow:hidden;
+	margin-top:10px;
+}
+#plist #show-list li p{
+	margin-top:10px;
+	font-size:18px;
+	font-weight:bold;
+	color:#dd3333;
+}
+#plist #show-list li a.detail{
+	display:block;
+	width: 120px;
+	height: 40px;
+	background: #dd3333;
+	color:#fff;
+	margin:0 auto;
+	margin-top:10px;
+	text-align:center;
+	line-height:40px;
+	border-radius:3px;
+	font-size:15px;
+	box-shadow:2px 2px 3px #E02E2E;
+}
+#plist #show-list li a.detail:hover{
+	background: #D32E2E;
+}
+/*分页导航*/
+#page_list{
+	width: 960px;
+	margin:0 auto;
+	height: 21px;
+}
+#page_list ul{
+	width: 525px;
+}
+#page_list ul li{
+	float:left;
+	margin-right: 5px;
+}
+#page_list ul li a:hover{
+	color: #5A5A74;
+	background: #eee;
+}
+#page_list ul li.active a{
+	background: #dd3333;
+	color: #fff;
+}
+#page_list ul li a{
+	color:#A0A0AA;
+	display:block;
+	border:1px solid #dd5f5f;
+	line-height:21px;
+	text-align:center;
+	min-width:25px;
+}

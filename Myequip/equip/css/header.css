@@ -1,0 +1,111 @@
+/*最头部样式*/
+#top_bar{
+	width: 100%;
+	height: 40px;
+	background: #757575;
+	color:#ddd;
+	font-size:10px;
+}
+#top_bar>div{
+	width: 960px;
+	margin:0 auto;
+}
+#top_bar .bar_left{
+	width: 600px;
+	line-height:40px;
+	text-align:center;
+/*	border:1px solid red;*/
+}
+#top_bar .bar_left>div:first-child{
+/*	line-height:40px;*/
+	margin-right:40px;
+}
+#top_bar .bar_left>div:first-child i{
+	margin-right:5px;
+}
+/*右侧登录注册*/
+#top_bar .bar_right{
+	width: 350px;
+	line-height:40px;
+	text-align:center;
+/*	border:1px solid red;*/
+}
+#top_bar div.bar_right ul.welcome_list{
+	display: none;
+}
+#top_bar div.bar_right ul.welcome_list span.username{
+	color: #D3D1D1;
+}
+#top_bar .bar_right ul li{
+	float:left;
+	height:40px;
+	margin-right:10px;
+}
+#top_bar .bar_right ul li:last-child{
+	margin-right:0;	
+}
+#top_bar .bar_right ul li:last-child a{
+	display:inline-block;
+	height:40px;
+}
+/*下为导航栏、logo、搜索栏*/
+.nav{
+	width: 960px;
+	height:50px;
+	margin:24px auto 0;
+}
+.nav .logo{
+	width: 220px;
+}
+.nav .logo img{
+	position:relative;
+	left:-10px;
+}
+/*导航栏*/
+/*.nav ul{
+	width: 450px;
+}
+.nav ul li{
+	float:left;
+	width: 90px;
+	height:40px;
+	padding:10px 0;
+}
+.nav ul li a{
+	display:inline-block;
+	width: 90px;
+	height: 20px;
+	color:#707070;
+}
+*/
+/*搜索框*/
+.nav .search{
+	width: 250px;
+	padding:5px 0 0 0;
+}
+.nav .search>div{
+	border:2px solid #DD3333;
+	height: 27px;
+	position: relative;
+}
+.nav .search>div>input{
+	border:none;
+	margin:5px 10px;
+	font-size:12px;
+	outline:none;
+}
+/*搜索的hover属性修改*/
+.nav .search>div>#searchHelp{
+	background:#DD3333;
+	display:inline-block;
+	position:absolute;
+	top:0;
+	right: 0;
+	width: 50px;
+	height: 27px;
+	line-height:27px;
+	text-align:center;
+}
+.nav .search>div>#searchHelp:hover{
+	color: #fff;
+}

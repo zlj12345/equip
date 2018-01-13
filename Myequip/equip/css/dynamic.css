@@ -1,0 +1,90 @@
+/*距顶部距离*/
+#dynamic{
+	margin: 20px 0;
+}
+/*顶部地址导航*/
+#href{
+	background:linear-gradient(to top,#dd3333 0%,#C43131 100%);
+	height: 40px;
+	box-shadow: 3px 3px 5px #C43131;
+}
+#href .container{
+	margin:0 auto;
+	width: 960px;
+	line-height:59px;
+	text-align:left;
+}
+#href .container p{
+	color:#fff;
+	line-height:40px;
+	text-align:left;
+}
+/*动态列表*/
+#content_items{
+	width: 960px;
+	height:660px;
+	margin:40px auto 0;
+}
+#content_items ul li{
+	width: 800px;
+	height:100px;
+	margin-bottom: 5px;
+	padding:0 5px 20px 0;
+	border-bottom:1px dashed #E5E5E5;
+	position:relative;
+	left:200px;
+	display: none;
+}
+#content_items ul li div:first-child{
+	width: 160px;
+
+}
+#content_items ul li div.spec{
+	width: 600px;
+}
+#content_items ul li div.spec p.title{
+	height: 19px;
+	color:#333;
+	margin-bottom:10px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+#content_items ul li div.spec p.title+p{
+	color:#bababa;
+	font-size:10px;
+	margin-bottom:10px;
+}
+#content_items ul li div.spec p:last-child{
+	font-size:10px;
+	overflow:hidden;
+}
+/*分页导航*/
+#page_list{
+	width: 960px;
+	margin:0 auto;
+	height: 21px;
+}
+#page_list ul{
+	width: 400px;
+}
+#page_list ul li{
+	float:left;
+	margin-right: 5px;
+}
+#page_list ul li a:hover{
+	color: #5A5A74;
+	background: #eee;
+}
+#page_list ul li.active a{
+	background: #717189;
+	color: #fff;
+}
+#page_list ul li a{
+	color:#A0A0AA;
+	display:block;
+	border:1px solid #76767C;
+	line-height:21px;
+	text-align:center;
+	min-width:25px;
+}

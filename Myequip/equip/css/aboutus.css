@@ -1,0 +1,61 @@
+#href{
+	background: #DD3333;
+	height: 40px;
+}
+#href .container{
+	margin:0 auto;
+	width: 960px;
+	line-height:59px;
+	text-align:left;
+}
+#href .container p{
+	color:#fff;
+	line-height:40px;
+	text-align:left;
+}
+/*主要内容*/
+#main{
+	width:960px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+#main>div:first-child{
+	width: 660px;
+}
+#main>div.pic{
+	width: 290px;
+}
+#main div.banner{
+	margin:40px 0;
+	height: 86px;
+	color: #000;
+	border-bottom: 1px solid #e0e0e0;
+}
+#main div.banner h1{
+	font-weight: normal;
+	height: 29px;
+	margin-bottom:5px;
+}
+#main div.banner p{
+	color: #a9a9a9;
+}
+#main div.content p{
+	text-indent: 28px;
+	color:#808080;
+	line-height:2em;
+	margin:35px 0;
+}
+/*右侧图片*/
+#main div.pic p{
+	height: 180px;
+	margin-bottom: 10px;
+}
+#main div.pic p:first-child{
+	margin-top: 50px;
+}
+#main div.pic p>img{
+	float: right;
+	width: 200px;
+	height: 180px;
+}
